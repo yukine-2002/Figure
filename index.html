@@ -1,620 +1,608 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="Css/Css.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Home</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-	<link rel="stylesheet" href="Css/Css.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https: //fonts.googleapis.com/css2? family = Oswald: wght @ 200 & display = swap " rel=" stylesheet ">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-	<link rel="stylesheet" href="Css/swiper.css">
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-		crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-		crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-		crossorigin="anonymous"></script>
-
-</head>
-
-<body>
-	<div id="main">
-		<header>
-			<div class="header">
-				<div class="header-left">
-					<div class="logo">
-						<img src="Img/logo.jpg" alt="logo">
-					</div>
-					<div class="navbar">
-						<nav>
-							<ul>
-								<li><a href="#">Trang Chủ</a></li>
-								<li><a href="#">Sản Phẩm</a></li>
-								<li><a href="#">Liên Hệ</a></li>
-								<li><a href="#">Blog</a></li>
-							</ul>
-						</nav>
-					</div>
-					<div class="search">
-						<div class="iconSearch">
-							<i class="fas fa-search"></i>
-						</div>
-
-						<div class="boxSearch">
-							<input type="search">
-						</div>
-					</div>
-				</div>
-				<div class="header-right">
-					<div class="adverbial">
-						<div class="login">
-							<i class="fas fa-user-circle f20px"></i>
-						</div>
-						<div class="cart">
-							<i class="fas fa-shopping-cart"></i>
-							<span class="countCart">0</span>
-						</div>
-					</div>
-				</div>
+  <body>
+    <div id="main">
+      <header>
+        <div class="header">
+          <div class="header-left">
+            <div class="logo">
+              <img src="Img/logo.jpg" alt="logo" />
+            </div>
+			<div class="menu-bar">
+				<i class="fas fa-bars"></i>
 			</div>
+            <div class="navbar">
+              <nav>
+                <ul>
+                  <li>
+                    <a href="#">Trang Chủ</a>
+                  </li>
+                  <li>
+                    <a href="#">Sản Phẩm</a>
+                  </li>
+                  <li>
+                    <a href="#">Liên Hệ</a>
+                  </li>
+                  <li>
+                    <a href="#">Blog</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="search">
+              <div class="iconSearch">
+                <i class="fas fa-search"></i>
+              </div>
 
-		</header>
+              <div class="boxSearch">
+                <input type="search" />
+              </div>
+            </div>
+          </div>
+          <div class="header-right">
+            <div class="adverbial">
+              <div class="login">
+                <i class="fas fa-user-circle f20px"></i>
+              </div>
+              <div class="cart">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="countCart">0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
 
-		<div class="body">
-			<section class="slide">
-				<div class="swiper-container mySwiper">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide relative">
-							<img src="Img/violet 600x600.png" />
-							<div class="content">
-								<div class="title top-down delay-4">
-									<h2>What is Lorem Ipsum?</h2>
-								</div>
-								<div class="text-content top-down delay-8">
-									<div class="start">
-										<i class="fas fa-star yellow"></i>
-										<i class="fas fa-star yellow"></i>
-										<i class="fas fa-star yellow"></i>
-										<i class="fas fa-star yellow"></i>
-										<i class="fas fa-star yellow"></i>
-									</div>
-									<p>
-										Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-										Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-										when an unknown printer took a galley of
-										type and scrambled it to make a type specimen book. It has survived not only
-										five centuries, but also the leap into electronic typesetting,
-										remaining essentially unchanged. It was popularised in the 1960s with the
-										release of Letraset sheets containing Lorem Ipsum passages, and more recently
-										with desktop
-										publishing software like Aldus PageMaker including versions of Lorem Ipsum
-									</p>
-									<div class="button">
-										<button class="showNow"> <span> Xem ngay</span></button>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-slide relative">
-							<img src="Img/athur 600x600.png" />
-							<div class="content">
-								<div class="title top-down delay-4">
-									<h2>What is Lorem Ipsum?</h2>
-								</div>
-								<div class="text-content top-down delay-8">
-									<div class="start">
-										<i class="fas fa-star yellow"></i>
-										<i class="fas fa-star yellow"></i>
-										<i class="fas fa-star yellow"></i>
-										<i class="fas fa-star yellow"></i>
-										<i class="fas fa-star yellow"></i>
-									</div>
-									<p>
-										Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-										Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-										when an unknown printer took a galley of
-										type and scrambled it to make a type specimen book. It has survived not only
-										five centuries, but also the leap into electronic typesetting,
-										remaining essentially unchanged. It was popularised in the 1960s with the
-										release of Letraset sheets containing Lorem Ipsum passages, and more recently
-										with desktop
-										publishing software like Aldus PageMaker including versions of Lorem Ipsum
-									</p>
-									<div class="button">
-										<button class="showNow"> <span> Xem ngay</span></button>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-slide relative">
-							<img src="Img/trans 600x600.png" />
-							<div class="content">
-								<div class="title top-down delay-4">
-									<h2>What is Lorem Ipsum?</h2>
-								</div>
-								<div class="text-content top-down delay-8">
-									<div class="start">
-										<i class="fas fa-star yellow"></i>
-										<i class="fas fa-star yellow"></i>
-										<i class="fas fa-star yellow"></i>
-										<i class="fas fa-star yellow"></i>
-										<i class="fas fa-star yellow"></i>
-									</div>
-									<p>
-										Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-										Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-										when an unknown printer took a galley of
-										type and scrambled it to make a type specimen book. It has survived not only
-										five centuries, but also the leap into electronic typesetting,
-										remaining essentially unchanged. It was popularised in the 1960s with the
-										release of Letraset sheets containing Lorem Ipsum passages, and more recently
-										with desktop
-										publishing software like Aldus PageMaker including versions of Lorem Ipsum
-									</p>
-									<div class="button">
-										<button class="showNow"> <span> Xem ngay</span></button>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-slide relative">
-							<img src="Img/vegeta 600x600.png" />
-							<div class="content ">
-								<div class="title top-down delay-4">
-									<h2>What is Lorem Ipsum?</h2>
-								</div>
-								<div class="text-content top-down delay-8">
-									<div class="start ">
-										<i class="fas fa-star yellow"></i>
-										<i class="fas fa-star yellow"></i>
-										<i class="fas fa-star yellow"></i>
-										<i class="fas fa-star yellow"></i>
-										<i class="fas fa-star yellow"></i>
-									</div>
-									<p>
-										Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-										Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-										when an unknown printer took a galley of
-										type and scrambled it to make a type specimen book. It has survived not only
-										five centuries, but also the leap into electronic typesetting,
-										remaining essentially unchanged. It was popularised in the 1960s with the
-										release of Letraset sheets containing Lorem Ipsum passages, and more recently
-										with desktop
-										publishing software like Aldus PageMaker including versions of Lorem Ipsum
-									</p>
-									<div class="button">
-										<button class="showNow"> <span> Xem ngay</span></button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+      <div class="body">
+        <div class="none"></div>
+        <section class="slide">
+          <div class="box-container-slide">
+            <div class="container-slide">
+              <div class="slide-circle">
+                <div class="invite">
+                  <div class="box-invite">
+                    <div class="invite-content">
+                      <h2>Website Figure</h2>
+                      <div class="text">
+                        <p>
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry. Lorem Ipsum has been the
+                          industry's standard dummy text ever since the 1500s,
+                          when an unknown printer took a galley of
+                        </p>
+                      </div>
+                    </div>
+                    <div class="invite-button">
+                      <button><span>Xem ngay</span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-			</section>
+              <div class="container-slide-image">
+                <div class="invite-image">
+                  <img src="Img/gaixinh 600x600.png" style="--i: 0" alt="" />
+                  <img src="Img/violet 600x600.png" style="--i: 1" alt="" />
+                  <img src="Img/tanjiro 600x300.png" style="--i: 2" alt="" />
+                  <img src="Img/violet.jpg" style="--i: 3" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-			<section class="prominent">
-				<div class="title">
-					<h3>Sản phẩm nổi bật</h3>
-				</div>
-				<div class="box-prominent">
-					<div class="box-container">
-						<div class="box">
-							<div class="imageBox">
-								<img src="Img/violet 600x600.png" alt="">
-								<ul class="action">
-									<li>
-										<i class="fas fa-heart"></i>
-										<span>Add to list</span>
-									</li>
+        <section class="prominent">
+          <div class="title">
+            <h3>Sản phẩm nổi bật</h3>
+          </div>
+          <div class="box-prominent">
+            <div class="box-container">
+              <div class="box">
+                <div class="imageBox">
+                  <img src="Img/violet 600x600.png" alt="" />
+                  <ul class="action">
+                    <li>
+                      <i class="fas fa-heart"></i>
+                      <span>Add to list</span>
+                    </li>
 
-									<li>
-										<i class="fas fa-cart-plus"></i>
-										<span>Add to list</span>
+                    <li>
+                      <i class="fas fa-cart-plus"></i>
+                      <span>Add to list</span>
+                    </li>
+                    <li>
+                      <i class="fas fa-eye"></i>
+                      <span>Add to list</span>
+                    </li>
+                  </ul>
+                </div>
 
-									</li>
-									<li>
-										<i class="fas fa-eye"></i>
-										<span>Add to list</span>
+                <div class="contents">
+                  <div class="productName">
+                    <h3>Violet Evergardent</h3>
+                  </div>
+                  <div class="price_raiting">
+                    <div class="price">
+                      <h5>200.000 Đ</h5>
+                    </div>
 
-									</li>
-								</ul>
-							</div>
+                    <div class="raiting">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-							<div class="contents">
-								<div class="productName">
-									<h3>Violet Evergardent</h3>
-								</div>
-								<div class="price_raiting">
-									<div class="price">
-										<h5>200.000 Đ</h5>
-									</div>
+              <div class="box">
+                <div class="imageBox">
+                  <img src="Img/violet 600x600.png" alt="" />
+                  <ul class="action">
+                    <li>
+                      <i class="fas fa-heart"></i>
+                      <span>Add to list</span>
+                    </li>
 
-									<div class="raiting">
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-									</div>
-								</div>
-							</div>
-						</div>
+                    <li>
+                      <i class="fas fa-cart-plus"></i>
+                      <span>Add to list</span>
+                    </li>
+                    <li>
+                      <i class="fas fa-eye"></i>
+                      <span>Add to list</span>
+                    </li>
+                  </ul>
+                </div>
 
+                <div class="contents">
+                  <div class="productName">
+                    <h3>Violet Evergardent</h3>
+                  </div>
+                  <div class="price_raiting">
+                    <div class="price">
+                      <h5>200.000 Đ</h5>
+                    </div>
 
-						<div class="box">
-							<div class="imageBox">
-								<img src="Img/violet 600x600.png" alt="">
-								<ul class="action">
-									<li>
-										<i class="fas fa-heart"></i>
-										<span>Add to list</span>
-									</li>
+                    <div class="raiting">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-									<li>
-										<i class="fas fa-cart-plus"></i>
-										<span>Add to list</span>
+              <div class="box">
+                <div class="imageBox">
+                  <img src="Img/violet 600x600.png" alt="" />
+                  <ul class="action">
+                    <li>
+                      <i class="fas fa-heart"></i>
+                      <span>Add to list</span>
+                    </li>
 
-									</li>
-									<li>
-										<i class="fas fa-eye"></i>
-										<span>Add to list</span>
+                    <li>
+                      <i class="fas fa-cart-plus"></i>
+                      <span>Add to list</span>
+                    </li>
+                    <li>
+                      <i class="fas fa-eye"></i>
+                      <span>Add to list</span>
+                    </li>
+                  </ul>
+                </div>
 
-									</li>
-								</ul>
-							</div>
+                <div class="contents">
+                  <div class="productName">
+                    <h3>Violet Evergardent</h3>
+                  </div>
+                  <div class="price_raiting">
+                    <div class="price">
+                      <h5>200.000 Đ</h5>
+                    </div>
 
-							<div class="contents">
-								<div class="productName">
-									<h3>Violet Evergardent</h3>
-								</div>
-								<div class="price_raiting">
-									<div class="price">
-										<h5>200.000 Đ</h5>
-									</div>
+                    <div class="raiting">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-									<div class="raiting">
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-									</div>
-								</div>
-							</div>
-						</div>
+              <div class="box">
+                <div class="imageBox">
+                  <img src="Img/violet 600x600.png" alt="" />
+                  <ul class="action">
+                    <li>
+                      <i class="fas fa-heart"></i>
+                      <span>Add to list</span>
+                    </li>
 
+                    <li>
+                      <i class="fas fa-cart-plus"></i>
+                      <span>Add to list</span>
+                    </li>
+                    <li>
+                      <i class="fas fa-eye"></i>
+                      <span>Add to list</span>
+                    </li>
+                  </ul>
+                </div>
 
-						<div class="box">
-							<div class="imageBox">
-								<img src="Img/violet 600x600.png" alt="">
-								<ul class="action">
-									<li>
-										<i class="fas fa-heart"></i>
-										<span>Add to list</span>
-									</li>
+                <div class="contents">
+                  <div class="productName">
+                    <h3>Violet Evergardent</h3>
+                  </div>
+                  <div class="price_raiting">
+                    <div class="price">
+                      <h5>200.000 Đ</h5>
+                    </div>
 
-									<li>
-										<i class="fas fa-cart-plus"></i>
-										<span>Add to list</span>
+                    <div class="raiting">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-									</li>
-									<li>
-										<i class="fas fa-eye"></i>
-										<span>Add to list</span>
+              <div class="box">
+                <div class="imageBox">
+                  <img src="Img/violet 600x600.png" alt="" />
+                  <ul class="action">
+                    <li>
+                      <i class="fas fa-heart"></i>
+                      <span>Add to list</span>
+                    </li>
 
-									</li>
-								</ul>
-							</div>
+                    <li>
+                      <i class="fas fa-cart-plus"></i>
+                      <span>Add to list</span>
+                    </li>
+                    <li>
+                      <i class="fas fa-eye"></i>
+                      <span>Add to list</span>
+                    </li>
+                  </ul>
+                </div>
 
-							<div class="contents">
-								<div class="productName">
-									<h3>Violet Evergardent</h3>
-								</div>
-								<div class="price_raiting">
-									<div class="price">
-										<h5>200.000 Đ</h5>
-									</div>
+                <div class="contents">
+                  <div class="productName">
+                    <h3>Violet Evergardent</h3>
+                  </div>
+                  <div class="price_raiting">
+                    <div class="price">
+                      <h5>200.000 Đ</h5>
+                    </div>
 
-									<div class="raiting">
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-									</div>
-								</div>
-							</div>
-						</div>
+                    <div class="raiting">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
+              <div class="box">
+                <div class="imageBox">
+                  <img src="Img/violet 600x600.png" alt="" />
+                  <ul class="action">
+                    <li>
+                      <i class="fas fa-heart"></i>
+                      <span>Add to list</span>
+                    </li>
 
-						<div class="box">
-							<div class="imageBox">
-								<img src="Img/violet 600x600.png" alt="">
-								<ul class="action">
-									<li>
-										<i class="fas fa-heart"></i>
-										<span>Add to list</span>
-									</li>
+                    <li>
+                      <i class="fas fa-cart-plus"></i>
+                      <span>Add to list</span>
+                    </li>
+                    <li>
+                      <i class="fas fa-eye"></i>
+                      <span>Add to list</span>
+                    </li>
+                  </ul>
+                </div>
 
-									<li>
-										<i class="fas fa-cart-plus"></i>
-										<span>Add to list</span>
+                <div class="contents">
+                  <div class="productName">
+                    <h3>Violet Evergardent</h3>
+                  </div>
+                  <div class="price_raiting">
+                    <div class="price">
+                      <h5>200.000 Đ</h5>
+                    </div>
+                    <div class="raiting">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box">
+                <div class="imageBox">
+                  <img src="Img/violet 600x600.png" alt="" />
+                  <ul class="action">
+                    <li>
+                      <i class="fas fa-heart"></i>
+                      <span>Add to list</span>
+                    </li>
 
-									</li>
-									<li>
-										<i class="fas fa-eye"></i>
-										<span>Add to list</span>
+                    <li>
+                      <i class="fas fa-cart-plus"></i>
+                      <span>Add to list</span>
+                    </li>
+                    <li>
+                      <i class="fas fa-eye"></i>
+                      <span>Add to list</span>
+                    </li>
+                  </ul>
+                </div>
 
-									</li>
-								</ul>
-							</div>
+                <div class="contents">
+                  <div class="productName">
+                    <h3>Violet Evergardent</h3>
+                  </div>
+                  <div class="price_raiting">
+                    <div class="price">
+                      <h5>200.000 Đ</h5>
+                    </div>
+                    <div class="raiting">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-							<div class="contents">
-								<div class="productName">
-									<h3>Violet Evergardent</h3>
-								</div>
-								<div class="price_raiting">
-									<div class="price">
-										<h5>200.000 Đ</h5>
-									</div>
+              <div class="box">
+                <div class="imageBox">
+                  <img src="Img/violet 600x600.png" alt="" />
+                  <ul class="action">
+                    <li>
+                      <i class="fas fa-heart"></i>
+                      <span>Add to list</span>
+                    </li>
 
-									<div class="raiting">
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-									</div>
-								</div>
-							</div>
-						</div>
+                    <li>
+                      <i class="fas fa-cart-plus"></i>
+                      <span>Add to list</span>
+                    </li>
+                    <li>
+                      <i class="fas fa-eye"></i>
+                      <span>Add to list</span>
+                    </li>
+                  </ul>
+                </div>
 
-						<div class="box">
-							<div class="imageBox">
-								<img src="Img/violet 600x600.png" alt="">
-								<ul class="action">
-									<li>
-										<i class="fas fa-heart"></i>
-										<span>Add to list</span>
-									</li>
+                <div class="contents">
+                  <div class="productName">
+                    <h3>Violet Evergardent</h3>
+                  </div>
+                  <div class="price_raiting">
+                    <div class="price">
+                      <h5>200.000 Đ</h5>
+                    </div>
+                    <div class="raiting">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-									<li>
-										<i class="fas fa-cart-plus"></i>
-										<span>Add to list</span>
+        <section class="introduce">
+          <div class="title">
+            <h3>Giới Thiệu</h3>
+          </div>
+          <div class="box-introduce">
+            <div class="introduce-center">
+              <div class="introduce-container">
+                <div class="introduct-flex">
+                  <div class="introduce-image">
+                    <img src="Img/introduct-figure.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="introduct-flex">
+                  <div class="introduce-image">
+                    <img src="Img/introduct-figure-2.jpg" alt="" />
+                  </div>
+                </div>
 
-									</li>
-									<li>
-										<i class="fas fa-eye"></i>
-										<span>Add to list</span>
+                <div class="introduct-flex">
+                  <div class="introduce-image">
+                    <img src="Img/introduct-figure-3.jpg" alt="" />
+                  </div>
+                </div>
 
-									</li>
-								</ul>
-							</div>
+                <div class="introduct-flex">
+                  <div class="introduce-image">
+                    <img src="Img/introduct-figure-4.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="introduct-content">
+                <div class="content-image">
+                  <div class="content-i-image">
+                    <img src="Img/tanjiro 600x300.png" alt="" />
+                  </div>
+                </div>
 
-							<div class="contents">
-								<div class="productName">
-									<h3>Violet Evergardent</h3>
-								</div>
-								<div class="price_raiting">
-									<div class="price">
-										<h5>200.000 Đ</h5>
-									</div>
+                <div class="introduct-about">
+                  <div class="about-title">
+                    <h2>Website bán Figure uy tín</h2>
+                  </div>
+                  <div class="about-text">
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of
+                    </p>
+                  </div>
+                  <div class="about-button">
+                    <button class="seenNow">Xem ngay</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-									<div class="raiting">
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-									</div>
-								</div>
-							</div>
-						</div>
+        <section class="support">
+          <div class="title">
+            <h3>Hỗ Trợ</h3>
+          </div>
 
+          <div class="box-support">
+            <div class="support-container">
+              <div class="support-form">
+                <form action="#">
+                  <div class="line-1">
+                    <div class="Name box-input">
+                      <label for="name">Họ Và Tên</label>
+                      <input type="text" id="name" placeholder="Họ và tên" />
+                    </div>
+                    <div class="Email box-input">
+                      <label for="email">Email</label>
+                      <input
+                        type="email"
+                        name=""
+                        id="email"
+                        placeholder="Email"
+                      />
+                    </div>
+                  </div>
 
-						<div class="box">
-							<div class="imageBox">
-								<img src="Img/violet 600x600.png" alt="">
-								<ul class="action">
-									<li>
-										<i class="fas fa-heart"></i>
-										<span>Add to list</span>
-									</li>
+                  <div class="title-sp box-after">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" placeholder="Title" />
+                  </div>
 
-									<li>
-										<i class="fas fa-cart-plus"></i>
-										<span>Add to list</span>
+                  <div class="sp-contents box-after">
+                    <label for="content">Contents</label>
+                    <textarea
+                      name=""
+                      id="content"
+                      cols="50"
+                      rows="5"
+                    ></textarea>
+                  </div>
 
-									</li>
-									<li>
-										<i class="fas fa-eye"></i>
-										<span>Add to list</span>
+                  <div class="sp-button">
+                    <button class="send">Gửi</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
 
-									</li>
-								</ul>
-							</div>
+      <footer>
+        <div class="footer-container">
+          <div class="row">
+            <div class="about-us">
+              <h3>Figure Shop</h3>
+              <ul>
+                <li>
+                  <a href="#">Trang Chủ</a>
+                </li>
+                <li>
+                  <a href="#">Sản Phẩm</a>
+                </li>
+                <li>
+                  <a href="#">Liên Hệ</a>
+                </li>
+                <li>
+                  <a href="#">Blog</a>
+                </li>
+              </ul>
+            </div>
+            <div class="contact">
+              <h3>Liên hệ</h3>
+              <ul>
+                <li> Địa chỉ: 189 Nguyên Duy Trinh, Quận Ngũ Hành Sơn,Tp.Đà Nẵng</li>
+                <li>Điện thoại: 0393256471</li>
+                <li>Fax: 0868866471</li>
+                <li>Mail: bthanh2001@gmail.com</li>
+              </ul>
+            </div>
+            <div class="Fanpage">
+              <div class="fanpage">
+                  <h3>Fanpage</h3>
+              </div>
+              <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fbuithanhtekk%2Fposts%2F571764940647109&show_text=true&width=500" width="250" height="248" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            </div>
+          </div>
+        </div>
+      </footer>
 
-							<div class="contents">
-								<div class="productName">
-									<h3>Violet Evergardent</h3>
-								</div>
-								<div class="price_raiting">
-									<div class="price">
-										<h5>200.000 Đ</h5>
-									</div>
-									<div class="raiting">
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="box">
-							<div class="imageBox">
-								<img src="Img/violet 600x600.png" alt="">
-								<ul class="action">
-									<li>
-										<i class="fas fa-heart"></i>
-										<span>Add to list</span>
-									</li>
+    </div>
 
-									<li>
-										<i class="fas fa-cart-plus"></i>
-										<span>Add to list</span>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-									</li>
-									<li>
-										<i class="fas fa-eye"></i>
-										<span>Add to list</span>
-
-									</li>
-								</ul>
-							</div>
-
-							<div class="contents">
-								<div class="productName">
-									<h3>Violet Evergardent</h3>
-								</div>
-								<div class="price_raiting">
-									<div class="price">
-										<h5>200.000 Đ</h5>
-									</div>
-									<div class="raiting">
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-									</div>
-								</div>
-							</div>	
-						</div>
-
-						<div class="box">
-							<div class="imageBox">
-								<img src="Img/violet 600x600.png" alt="">
-								<ul class="action">
-									<li>
-										<i class="fas fa-heart"></i>
-										<span>Add to list</span>
-									</li>
-
-									<li>
-										<i class="fas fa-cart-plus"></i>
-										<span>Add to list</span>
-
-									</li>
-									<li>
-										<i class="fas fa-eye"></i>
-										<span>Add to list</span>
-
-									</li>
-								</ul>
-							</div>
-
-							<div class="contents">
-								<div class="productName">
-									<h3>Violet Evergardent</h3>
-								</div>
-								<div class="price_raiting">
-									<div class="price">
-										<h5>200.000 Đ</h5>
-									</div>
-									<div class="raiting">
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-				</div>
-			</section>
-
-			<section class="introduce">
-				<div class="title">
-					<h3>Giới Thiệu</h3>
-				</div>
-				<div class="box-introduce">
-					<div class="introduce-center">
-						<div class="introduce-container">
-							<div class="introduct-flex">
-								<div class="introduce-image">
-									<img src="Img/introduct-figure.jpg" alt="">
-								</div>
-							</div>
-							<div class="introduct-flex">
-								<div class="introduce-image">
-									<img src="Img/introduct-figure-2.jpg" alt="">
-								</div>
-							</div>
-
-							<div class="introduct-flex">
-								<div class="introduce-image">
-									<img src="Img/introduct-figure-3.jpg" alt="">
-								</div>
-							</div>
-
-							<div class="introduct-flex">
-								<div class="introduce-image">
-									<img src="Img/introduct-figure-4.jpg" alt="">
-								</div>
-							</div>
-						</div>
-						<div class="introduct-content">
-							<div class="content-image">
-								<div class="content-i-image">
-									<img src="Img/tanjiro 600x300.png" alt="">
-								</div>
-							</div>
-
-							<div class="introduct-about">
-								<div class="about-title">
-									<h2>Website bán Figure uy tín</h2>
-								</div>
-								<div class="about-text">
-									<p>
-										Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-										Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-										when an unknown printer took a galley of
-									</p>
-								</div>
-								<div class="about-button">
-									<button class="seenNow">Xem ngay</button>
-								</div>
-							</div>
-						</div>
-					</div>
-				
-				</div>
-			</section>
-
-		</div>
-
-
-
-	</div>
-
-	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-	<script type="text/javascript" src="Js/code.js"></script>
-</body>
-
+    <script type="text/javascript" src="Js/code.js"></script>
+  </body>
 </html>
