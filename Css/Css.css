@@ -151,7 +151,7 @@ nav ul li a{
     transition: 1s;
     display: block;
 }
-.container-slide{
+.container-slides{
     width: 100%;
     height: 610px;
 }
@@ -249,7 +249,7 @@ nav ul li a{
     grid-gap: 20px;
     padding: 25px 20px;
 }
-.container-slide{
+.container-slides{
     display: flex;
 }
 .box-container .box{
@@ -565,7 +565,9 @@ footer{
     margin: 10px 0;
 }
 .rate{
+    overflow: hidden;
     padding: 20px 0 40px 0;
+    position: relative;
 }
 .rate-block {
     width: 100%;
