@@ -2,13 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
+    <title>Sản phẩm</title>
     <link rel="stylesheet" href="Css/Css.css" />
+    <link rel="stylesheet" href="Css/product/product.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,13 +17,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   </head>
-
   <body>
     <div id="main">
       <header>
@@ -81,48 +73,152 @@
         </div>
       </header>
 
-      <div class="body">
-        <div class="none"></div>
-        <section class="slide">
-          <div class="box-container-slide">
-            <div class="container-slide">
-              <div class="slide-circle">
-                <div class="invite">
-                  <div class="box-invite">
-                    <div class="invite-content">
-                      <h2>Website Figure</h2>
-                      <div class="text">
-                        <p>
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the
-                          industry's standard dummy text ever since the 1500s,
-                          when an unknown printer took a galley of
-                        </p>
-                      </div>
-                    </div>
-                    <div class="invite-button">
-                      <button><span>Xem ngay</span></button>
-                    </div>
-                  </div>
+      <div class="body-product">
+        <section class="product-slide">
+          <div class="slide-box">
+            <div class="slide-container">
+              <div class="slide-image">
+                <img src="Img/Kimetsu.no.Yaiba.full.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="product-box">
+          <div class="title-sort">
+            <div class="title-product">
+              <h2>Tất cả sản phẩm</h2>
+            </div>
+            <div class="sort">
+              <div class="sort-product">
+                <p>
+                  <i class="fas fa-sort-alpha-down"></i> <span>Sắp xếp</span>
+                </p>
+              </div>
+              <div class="list-sort">
+                <ul>
+                  <li>
+                    <span class="check-sort check"></span>
+                    <span>Giá : tăng dần</span>
+                  </li>
+                  <li>
+                    <span class="check-sort check"></span>
+                    <span>Giá : giản dần</span>
+                  </li>
+                  <li>
+                    <span class="check-sort check"></span>
+                    <span>Tên : A - Z</span>
+                  </li>
+                  <li>
+                    <span class="check-sort check"></span
+                    ><span>Tên : Z - A</span>
+                  </li>
+                  <li>
+                    <span class="check-sort check"></span><span>Mới nhất</span>
+                  </li>
+                  <li>
+                    <span class="check-sort check"></span> <span>Cũ nhất</span>
+                  </li>
+                  <li>
+                    <span class="check-sort check"></span>
+                    <span>Bán chạy nhất</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="prouduct-filter">
+            <div class="filter-adv">
+              <div class="name-filter">
+                <i class="fas fa-filter"></i> <span>bộ lọc</span>
+              </div>
+              <div class="sort-price">
+                <div class="sort-product">
+                  <p><i class="fas fa-sort-alpha-down"></i> <span>Giá</span></p>
+                </div>
+                <div class="list-sort-price">
+                  <ul>
+                    <li>
+                      <span class="check-price check"></span>
+                      <span>Dưới 1.000.000 đ</span>
+                    </li>
+                    <li>
+                      <span class="check-price check"></span>
+                      <span>1.000.000 đ - 2.000.000 đ</span>
+                    </li>
+                    <li>
+                      <span class="check-price check"></span>
+                      <span>2.000.000 đ - 3.000.000 đ</span>
+                    </li>
+                    <li>
+                      <span class="check-price check"></span
+                      ><span>3.000.000 đ - 4.000.000 đ</span>
+                    </li>
+                    <li>
+                      <span class="check-price check"></span
+                      ><span>Trên 4.000.000 đ</span>
+                    </li>
+                  </ul>
                 </div>
               </div>
 
-              <div class="container-slide-image">
-                <div class="invite-image">
-                  <img src="Img/gaixinh 600x600.png" style="--i: 0" alt="" />
-                  <img src="Img/violet 600x600.png" style="--i: 1" alt="" />
-                  <img src="Img/tanjiro 600x300.png" style="--i: 2" alt="" />
-                  <img src="Img/violet.jpg" style="--i: 3" alt="" />
+              <div class="sort-kind">
+                <div class="sort-product">
+                  <p>
+                    <i class="fas fa-sort-alpha-down"></i> <span>Thể loại</span>
+                  </p>
+                </div>
+                <div class="list-sort-kind">
+                  <ul>
+                    <li>
+                      <span class="check-kind check"></span> <span>Chibi</span>
+                    </li>
+                    <li>
+                      <span class="check-kind check"></span> <span>Action</span>
+                    </li>
+                    <li>
+                      <span class="check-kind check"></span> <span>BB</span>
+                    </li>
+                    <li>
+                      <span class="check-kind check"></span><span>Khác</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="sort-size">
+                <div class="sort-product">
+                  <p>
+                    <i class="fas fa-sort-alpha-down"></i>
+                    <span>Kích thước</span>
+                  </p>
+                </div>
+                <div class="list-sort-size">
+                  <ul>
+                    <li>
+                      <span class="check-size check"></span>
+                      <span>Dưới 10cm</span>
+                    </li>
+                    <li>
+                      <span class="check-size check"></span>
+                      <span>10cm - 20cm</span>
+                    </li>
+                    <li>
+                      <span class="check-size check"></span>
+                      <span>20cm - 30cm</span>
+                    </li>
+                    <li>
+                      <span class="check-size check"></span
+                      ><span>Trên 30cm</span>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section class="prominent">
-          <div class="title">
-            <h3>Sản phẩm nổi bật</h3>
-          </div>
+        <section class="product-box-container">
           <div class="box-prominent">
             <div class="box-container">
               <div class="box">
@@ -442,325 +538,113 @@
               </div>
             </div>
           </div>
+          <div class="page-divide">
+            <div class="pagination">
+            <a href="#">«</a>
+            <a href="#">1</a>
+            <a class="active" href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">»</a>
+          </div>
+          </div>
+          
         </section>
 
-        <section class="introduce">
+        <section class="prodcut-customer">
           <div class="title">
-            <h3>Giới Thiệu</h3>
+            <h2>Chắc bạn sẽ chú ý</h2>
           </div>
-          <div class="box-introduce">
-            <div class="introduce-center">
-              <div class="introduce-container">
-                <div class="introduct-flex">
-                  <div class="introduce-image">
-                    <img src="Img/introduct-figure.jpg" alt="" />
-                  </div>
-                </div>
-                <div class="introduct-flex">
-                  <div class="introduce-image">
-                    <img src="Img/introduct-figure-2.jpg" alt="" />
-                  </div>
-                </div>
+            <div class="customer-attention">
+              <div class="attention-row">
+                <div class="attention-left">
+                  <div class="attention-box">
+                    
+                    <div class="attention-box-product">
+                      <div class="attention-img">
+                        <img src="Img/vegeta 600x600.png" alt="">
+                      </div>
+                      <div class="attention-content">
+                        <div class="attention-content-name">
+                          <h4>Vegeta Figure 30cm </h4>
+                          <div class="attention-content-price">
+                            <strong>340.000 đ</strong>
+                          </div>
+                        </div>
+                       <div class="attention-button">
+                         <button ><i class="fas fa-cart-plus"></i>Thêm vào giỏ hàng</button>
+                       </div>
 
-                <div class="introduct-flex">
-                  <div class="introduce-image">
-                    <img src="Img/introduct-figure-3.jpg" alt="" />
-                  </div>
-                </div>
+                      </div>
+                    </div>
 
-                <div class="introduct-flex">
-                  <div class="introduce-image">
-                    <img src="Img/introduct-figure-4.jpg" alt="" />
-                  </div>
-                </div>
-              </div>
-              <div class="introduct-content">
-                <div class="content-image">
-                  <div class="content-i-image">
-                    <img src="Img/tanjiro 600x300.png" alt="" />
-                  </div>
-                </div>
+                    <div class="attention-box-product">
+                      <div class="attention-img">
+                        <img src="Img/vegeta 600x600.png" alt="">
+                      </div>
+                      <div class="attention-content">
+                        <div class="attention-content-name">
+                          <h4>Vegeta Figure 30cm</h4>
+                          <div class="attention-content-price">
+                            <strong>340.000 đ</strong>
+                          </div>
+                        </div>
+                       <div class="attention-button">
+                         <button ><i class="fas fa-cart-plus"></i>Thêm vào giỏ hàng</button>
+                       </div>
 
-                <div class="introduct-about">
-                  <div class="about-title">
-                    <h2>Website bán Figure uy tín</h2>
+                      </div>
+                    </div>
+
+                    <div class="attention-box-product">
+                      <div class="attention-img">
+                        <img src="Img/vegeta 600x600.png" alt="">
+                      </div>
+                      <div class="attention-content">
+                        <div class="attention-content-name">
+                          <h4>Vegeta Figure 30cm</h4>
+                          <div class="attention-content-price">
+                            <strong>340.000 đ</strong>
+                          </div>
+                        </div>
+                       <div class="attention-button">
+                         <button ><i class="fas fa-cart-plus"></i>Thêm vào giỏ hàng</button>
+                       </div>
+
+                      </div>
+                    </div>
+
+                    <div class="attention-box-product">
+                      <div class="attention-img">
+                        <img src="Img/vegeta 600x600.png" alt="">
+                      </div>
+                      <div class="attention-content">
+                        <div class="attention-content-name">
+                          <h4>Vegeta Figure 30cm</h4>
+                          <div class="attention-content-price">
+                            <strong>340.000 đ</strong>
+                          </div>
+                        </div>
+                       <div class="attention-button">
+                         <button ><i class="fas fa-cart-plus"></i>Thêm vào giỏ hàng</button>
+                       </div>
+
+                      </div>
+                    </div>
+
                   </div>
-                  <div class="about-text">
-                    <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of
-                    </p>
-                  </div>
-                  <div class="about-button">
-                    <button class="seenNow">Xem ngay</button>
-                  </div>
+                </div>
+                <div class="attention-right">
+                    <div class="attention-box-big">
+                      <div class="attention-box-img">
+                        <img src="Img/Fate.jpg" alt="">
+                      </div>
+                    </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-
-        <section class="rate no-4">
-          <div class="service-title title">
-            <h3>Đánh giá</h3>
-          </div>
-
-          <div class="swiper-container swiperRate container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="rate-block">
-                  <div class="block-img">
-                    <img src="Img/violet.jpg" alt="" />
-                  </div>
-                  <div class="block-body">
-                    <div class="block-name">
-                      <h3>Violet</h3>
-                    </div>
-                    <div class="block-content">
-                      <div class="rate-SAO">
-                        <span>Rate :</span>
-                        <span>
-                          <i class="fas fa-star color-3"></i>
-                          <i class="fas fa-star color-3"></i>
-                          <i class="fas fa-star color-3"></i>
-                          <i class="fas fa-star color-3"></i>
-                          <i class="fas fa-star color-3"></i>
-                        </span>
-                      </div>
-                      <div class="block-text">
-                        <p>
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the
-                          industry's standard dummy text ever since the 1500s,
-                          when an unknown printer took a galley of type and
-                          scrambled it to make a type specimen book.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="rate-block">
-                  <div class="block-img">
-                    <img src="Img/violet.jpg" alt="" />
-                  </div>
-                  <div class="block-body">
-                    <div class="block-name">
-                      <h3>Violet</h3>
-                    </div>
-                    <div class="block-content">
-                      <div class="rate-SAO">
-                        <span>Rate :</span>
-                        <span>
-                          <i class="fas fa-star color-3"></i>
-                          <i class="fas fa-star color-3"></i>
-                          <i class="fas fa-star color-3"></i>
-                          <i class="fas fa-star color-3"></i>
-                          <i class="fas fa-star color-3"></i>
-                        </span>
-                      </div>
-                      <div class="block-text">
-                        <p>
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the
-                          industry's standard dummy text ever since the 1500s,
-                          when an unknown printer took a galley of type and
-                          scrambled it to make a type specimen book.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="rate-block">
-                  <div class="block-img">
-                    <img src="Img/violet.jpg" alt="" />
-                  </div>
-                  <div class="block-body">
-                    <div class="block-name">
-                      <h3>Violet</h3>
-                    </div>
-                    <div class="block-content">
-                      <div class="rate-SAO">
-                        <span>Rate :</span>
-                        <span>
-                          <i class="fas fa-star color-3"></i>
-                          <i class="fas fa-star color-3"></i>
-                          <i class="fas fa-star color-3"></i>
-                          <i class="fas fa-star color-3"></i>
-                          <i class="fas fa-star color-3"></i>
-                        </span>
-                      </div>
-                      <div class="block-text">
-                        <p>
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the
-                          industry's standard dummy text ever since the 1500s,
-                          when an unknown printer took a galley of type and
-                          scrambled it to make a type specimen book.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="rate-block">
-                  <div class="block-img">
-                    <img src="Img/violet.jpg" alt="" />
-                  </div>
-                  <div class="block-body">
-                    <div class="block-name">
-                      <h3>Violet</h3>
-                    </div>
-                    <div class="block-content">
-                      <div class="rate-SAO">
-                        <span>Rate :</span>
-                        <span>
-                          <i class="fas fa-star color-3"></i>
-                          <i class="fas fa-star color-3"></i>
-                          <i class="fas fa-star color-3"></i>
-                          <i class="fas fa-star color-3"></i>
-                          <i class="fas fa-star color-3"></i>
-                        </span>
-                      </div>
-                      <div class="block-text">
-                        <p>
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the
-                          industry's standard dummy text ever since the 1500s,
-                          when an unknown printer took a galley of type and
-                          scrambled it to make a type specimen book.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="rate-block">
-                  <div class="block-img">
-                    <img src="Img/violet.jpg" alt="" />
-                  </div>
-                  <div class="block-body">
-                    <div class="block-name">
-                      <h3>Violet</h3>
-                    </div>
-                    <div class="block-content">
-                      <div class="rate-SAO">
-                        <span>Rate :</span>
-                        <span>
-                          <i class="fas fa-star color-3"></i>
-                          <i class="fas fa-star color-3"></i>
-                          <i class="fas fa-star color-3"></i>
-                          <i class="fas fa-star color-3"></i>
-                          <i class="fas fa-star color-3"></i>
-                        </span>
-                      </div>
-                      <div class="block-text">
-                        <p>
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the
-                          industry's standard dummy text ever since the 1500s,
-                          when an unknown printer took a galley of type and
-                          scrambled it to make a type specimen book.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="rate-block">
-                  <div class="block-img">
-                    <img src="Img/violet.jpg" alt="" />
-                  </div>
-                  <div class="block-body">
-                    <div class="block-name">
-                      <h3>Violet</h3>
-                    </div>
-                    <div class="block-content">
-                      <div class="rate-SAO">
-                        <span>Rate :</span>
-                        <span>
-                          <i class="fas fa-star color-3"></i>
-                          <i class="fas fa-star color-3"></i>
-                          <i class="fas fa-star color-3"></i>
-                          <i class="fas fa-star color-3"></i>
-                          <i class="fas fa-star color-3"></i>
-                        </span>
-                      </div>
-                      <div class="block-text">
-                        <p>
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the
-                          industry's standard dummy text ever since the 1500s,
-                          when an unknown printer took a galley of type and
-                          scrambled it to make a type specimen book.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-          </div>
-        </section>
-
-        <section class="support">
-          <div class="title">
-            <h3>Hỗ Trợ</h3>
-          </div>
-
-          <div class="box-support">
-            <div class="support-container">
-              <div class="support-form">
-                <form action="#">
-                  <div class="line-1">
-                    <div class="Name box-input">
-                      <label for="name">Họ Và Tên</label>
-                      <input type="text" id="name" placeholder="Họ và tên" />
-                    </div>
-                    <div class="Email box-input">
-                      <label for="email">Email</label>
-                      <input
-                        type="email"
-                        name=""
-                        id="email"
-                        placeholder="Email"
-                      />
-                    </div>
-                  </div>
-
-                  <div class="title-sp box-after">
-                    <label for="title">Title</label>
-                    <input type="text" id="title" placeholder="Title" />
-                  </div>
-
-                  <div class="sp-contents box-after">
-                    <label for="content">Contents</label>
-                    <textarea
-                      name=""
-                      id="content"
-                      cols="50"
-                      rows="5"
-                    ></textarea>
-                  </div>
-
-                  <div class="sp-button">
-                    <button class="send">Gửi</button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
         </section>
       </div>
 
@@ -814,10 +698,7 @@
         </div>
       </footer>
     </div>
-
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-    <script type="text/javascript" src="Js/code.js"></script>
-    <script type="text/javascript" src="Js/swiper.js"></script>
+    <script src="Js/code.js"></script>
+    <script src="Js/product.js"></script>
   </body>
 </html>

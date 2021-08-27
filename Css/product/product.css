@@ -1,0 +1,180 @@
+.slide-image{
+    width: 100%;
+    height: 100%;
+}
+.slide-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.title-sort{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.sort ,.sort-kind, .sort-size, .sort-price {
+  display: block;
+  width: 100%;
+  max-width: 250px;
+  padding: 10px;
+  margin: 5px;
+  position: relative;
+}
+.sort-product{
+  height: 30px;
+  border: 1px solid transparent;
+  border-color: transparent black black black;
+  text-align: center;
+  padding: 5px;
+  
+  cursor: pointer;
+}
+.sort-product p i , .sort-product p span{
+   margin: 5px;
+}
+.sort:hover .list-sort , .sort-price:hover .list-sort-price ,.sort-kind:hover .list-sort-kind,.sort-size:hover .list-sort-size  {
+  visibility:visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+.list-sort , .list-sort-price, .list-sort-kind, .list-sort-size{
+  position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 1s;
+    visibility: hidden; 
+    opacity: 0;
+    width: 93%;
+    background: #fff;
+    transform: translateY(25px);
+    z-index: 2;
+}
+.list-sort ul , .list-sort-price ul , .list-sort-kind ul, .list-sort-size ul{
+  list-style:none;
+
+}
+.list-sort ul li , .list-sort-price ul li , .list-sort-kind ul li, .list-sort-size ul li{
+  padding: 5px 30px;
+  margin: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+.list-sort ul li .check, .list-sort-price ul li .check, .list-sort-kind ul li .check, .list-sort-size ul li .check{
+  margin: 0 10px;
+}
+.list-sort ul li:hover , .list-sort-price ul li:hover , .list-sort-kind ul li:hover, .list-sort-size ul li:hover {
+  background-color: #3333;
+}
+.filter-adv {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+.pagination a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+.product-box-container{
+  width: 100%;
+  height: 100%;
+  padding: 20px 0 ;
+  text-align: center;
+}
+.page-divide{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.customer-attention{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.attention-row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+
+.attention-box{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-gap: 10px;
+}
+.attention-box-product{
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.attention-content{
+  position: relative;
+  transition: 1s;
+  text-align: center;
+  cursor: pointer;
+  transition: 1s;
+}
+.attention-content-name h4 {
+  text-align: center;
+  white-space: nowrap; 
+  width: 200px; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+} 
+.attention-img img{
+  width: 100%;
+  height: 100%;
+}
+.attention-box-img img{
+  max-width: 500px;
+  width: 100%;
+  object-fit: contain;
+}
+.attention-button{
+  position: absolute;
+  transition: 1s;
+  left: 10px;
+  padding: 10px;
+  font-size: 17px;
+  cursor: pointer;
+}
+.attention-button button {
+    outline: none;
+    border:none;
+    padding: 10px 20px;
+    border-radius: 10px ;
+    background: #333333;
+    color: white;
+    cursor: pointer;
+}
+
+.attention-content:hover .attention-content-name{
+    background: rgba(255, 255, 255, 0.5);
+    transition: 1s;
+    color: #000;
+    transform: translateY(-70px);
+}
+.attention-content:hover .attention-button{
+    transition: 1s;
+    transform: translateY(-70px);
+}
