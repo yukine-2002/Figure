@@ -1,4 +1,4 @@
-var swiper1 = new Swiper('.swiperRate', {
+const swiper1 = new Swiper('.swiperRate', {
 
     direction: 'horizontal',
     loop: true,
@@ -40,4 +40,14 @@ var swiper1 = new Swiper('.swiperRate', {
   // },
 });
 
+const swiperProduct = new Swiper(".mySwiper-product", {
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  autoplay: {
+    delay: 5000,
+  }
+});
 
