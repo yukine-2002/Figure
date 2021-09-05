@@ -82,15 +82,15 @@
 //     position: relative;
 //     color: black;
 //   }
-  
+
 //   .sort select {
 //     display: none; /*hide original SELECT element:*/
 //   }
-  
+
 //   .select-selected {
 //     background-color: white;
 //   }
-  
+
 //   /*style the arrow inside the select element:*/
 //   .select-selected:after {
 //     position: absolute;
@@ -102,13 +102,13 @@
 //     border: 6px solid transparent;
 //     border-color: #fff transparent transparent transparent;
 //   }
-  
+
 //   /*point the arrow upwards when the select box is open (active):*/
 //   .select-selected.select-arrow-active:after {
 //     border-color: transparent transparent #fff transparent;
 //     top: 7px;
 //   }
-  
+
 //   /*style the items (options), including the selected item:*/
 //   .select-items div,.select-selected {
 //     color: black;
@@ -118,7 +118,7 @@
 //     cursor: pointer;
 //     user-select: none;
 //   }
-  
+
 //   /*style items (options):*/
 //   .select-items {
 //     position: absolute;
@@ -128,123 +128,83 @@
 //     right: 0;
 //     z-index: 99;
 //   }
-  
+
 //   /*hide the items when the select box is closed:*/
 //   .select-hide {
 //     display: none;
 //   }
-  
+
 //   .select-items div:hover, .same-as-selected {
 //     background-color: rgba(0, 0, 0, 0.1);
 //   } `
 
-var listLi = document.querySelectorAll('.list-sort');
-var listLiPrice = document.querySelectorAll('.list-sort-price');
-var listLiKind = document.querySelectorAll('.list-sort-kind');
-var listLiSize = document.querySelectorAll('.list-sort-size');
-var checkActive = document.querySelectorAll('span.check-sort');
-var checkActiveprice = document.querySelectorAll('span.check-price');
-var checkActivesize = document.querySelectorAll('span.check-size');
-var checkActivekind = document.querySelectorAll('span.check-kind');
-var getElementLi,getElementLiPrice,getElementLiKind,getElementLiSize;
+var listLi = document.querySelectorAll(".list-sort");
+var listLiPrice = document.querySelectorAll(".list-sort-price");
+var listLiKind = document.querySelectorAll(".list-sort-kind");
+var listLiSize = document.querySelectorAll(".list-sort-size");
+var checkActiveAZ = document.querySelectorAll("span.check-sort");
+var checkActiveprice = document.querySelectorAll("span.check-price");
+var checkActivesize = document.querySelectorAll("span.check-size");
+var checkActivekind = document.querySelectorAll("span.check-kind");
+var getElementLi, getElementLiPrice, getElementLiKind, getElementLiSize;
 var num = 0;
-getElementLi = listLi[0].getElementsByTagName('ul')[0].getElementsByTagName('li');
-for(let i=0 ; i < getElementLi.length ; i++){
-    getElementLi[i].addEventListener('click',()=>{
-            const icon = `<i class="fas fa-check"></i>`;
-            checkActive[i].innerHTML=icon;
-            if(num === 1){
-              for(let j = 0 ; j < checkActive.length ; j++ ){
-                checkActive[j].innerHTML='';
-              }
-              num =0;
-            }else{
-                num ++;
-            }
-        
-      })
-     
-}
 
-getElementLiPrice = listLiPrice[0].getElementsByTagName('ul')[0].getElementsByTagName('li');
-for(let i=0 ; i < getElementLiPrice.length ; i++){
-    getElementLiPrice[i].addEventListener('click',()=>{
-
+var checkActive = (Element, checkActives) => {
+  for (let i = 0; i < Element.length; i++) {
+    Element[i].addEventListener("click", () => {
       const icon = `<i class="fas fa-check"></i>`;
-        checkActiveprice[i].innerHTML=icon;
-        if(num === 1){
-          for(let j = 0 ; j < checkActiveprice.length ; j++ ){
-            checkActiveprice[j].innerHTML='';
-          }
-          num =0;
-        }else{
-            num ++;
+      checkActives[i].innerHTML = icon;
+      if (num === 1) {
+        for (let j = 0; j < checkActives.length; j++) {
+          checkActives[j].innerHTML = "";
         }
-        
-    
-    })
-}
+        num = 0;
+      } else {
+        num++;
+      }
+    });
+  }
+};
+getElementLi = listLi[0]
+  .getElementsByTagName("ul")[0]
+  .getElementsByTagName("li");
+checkActive(getElementLi, checkActiveAZ);
 
-getElementLiKind = listLiKind[0].getElementsByTagName('ul')[0].getElementsByTagName('li');
-for(let i=0 ; i < getElementLiKind.length ; i++){
-    getElementLiKind[i].addEventListener('click',()=>{
+getElementLiPrice = listLiPrice[0]
+  .getElementsByTagName("ul")[0]
+  .getElementsByTagName("li");
+checkActive(getElementLiPrice, checkActiveprice);
 
-      const icon = `<i class="fas fa-check"></i>`;
-        checkActivekind[i].innerHTML=icon;
-        if(num === 1){
-          for(let j = 0 ; j < checkActivekind.length ; j++ ){
-            checkActivekind[j].innerHTML='';
-          }
-          num =0;
-        }else{
-            num ++;
-        }
-        
-    
-    })
-}
+getElementLiKind = listLiKind[0]
+  .getElementsByTagName("ul")[0]
+  .getElementsByTagName("li");
+checkActive(getElementLiKind, checkActivekind);
 
-getElementLiSize = listLiSize[0].getElementsByTagName('ul')[0].getElementsByTagName('li');
-for(let i=0 ; i < getElementLiSize.length ; i++){
-    getElementLiSize[i].addEventListener('click',()=>{
-
-      const icon = `<i class="fas fa-check"></i>`;
-        checkActivesize[i].innerHTML=icon;
-        if(num === 1){
-          for(let j = 0 ; j < checkActivesize.length ; j++ ){
-            checkActivesize[j].innerHTML='';
-          }
-          num =0;
-        }else{
-            num ++;
-        }
-        
-    
-    })
-}
+getElementLiSize = listLiSize[0]
+  .getElementsByTagName("ul")[0]
+  .getElementsByTagName("li");
+checkActive(getElementLiSize, checkActivesize);
 
 function resize() {
-  if(window.innerWidth < 1000){
-    console.log('<1000');
+  if (window.innerWidth < 1000) {
+    console.log("<1000");
   }
   // console.log("height: ", window.innerHeight, "px");
   // console.log("width: ", window.innerWidth, "px");
 }
 
 window.onresize = resize;
-if(window.innerWidth < 1000){
-  document.querySelector('.sort-price').addEventListener('click', () => {
-    document.querySelector('.list-sort-price').classList.toggle('class-vip');
+if (window.innerWidth < 1000) {
+  document.querySelector(".sort-price").addEventListener("click", () => {
+    document.querySelector(".list-sort-price").classList.toggle("class-vip");
     console.log(1);
-  })
-  document.querySelector('.sort-kind').addEventListener('click', () => {
-    document.querySelector('.list-sort-kind').classList.toggle('class-vip');
+  });
+  document.querySelector(".sort-kind").addEventListener("click", () => {
+    document.querySelector(".list-sort-kind").classList.toggle("class-vip");
     console.log(1);
-  })
-  document.querySelector('.sort-size').addEventListener('click', () => {
-    document.querySelector('.list-sort-size').classList.toggle('class-vip');
+  });
+  document.querySelector(".sort-size").addEventListener("click", () => {
+    document.querySelector(".list-sort-size").classList.toggle("class-vip");
     console.log(1);
-  })
+  });
 }
-
-

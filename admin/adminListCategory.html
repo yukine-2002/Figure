@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin list category</title>
+    <link rel="stylesheet" href="../Css/admin/admin.css" />
+    <link rel="stylesheet" href="../Css/admin/adminProduct.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <input type="checkBox" id="check" />
+    <header>
+      <label for="check"><i class="fas fa-bars" id="slidebar_btn"></i></label>
+      <div class="left_area">
+        <h3>Admin Page</h3>
+      </div>
+      <div class="right_area">
+        <a href="" class="logout_btn">Logout</a>
+      </div>
+    </header>
+
+    <div class="slidebar">
+      <div class="profile_info">
+        <img src="../Img/gaixinh 600x600.png" class="profile_imgae" alt="" />
+        <h4>Gái xinh</h4>
+      </div>
+      <div class="menu">
+        <div class="item">
+          <a class="sub-btn" href="#"
+            ><i class="fa fa-desktop"></i><span>Dashboard</span>
+            <i class="fas fa-angle-right dropdown"></i
+          ></a>
+          <div class="sub-menu">
+            <a href="" class="sub-item"
+              ><i class="fab fa-slideshare"></i></i><span>Edit slide</span></a
+            >
+            <a href="" class="sub-item"
+              ><i class="fas fa-text-width"></i></i><span>Edit content</span></a
+            >
+            <a href="" class="sub-item"
+              ><i class="fab fa-wordpress"></i></i><span>Edit logo</span></a
+            >
+          </div>
+        </div>
+        <div class="item">
+          <a class="" href="adminListCategory.html"
+            ><i class="fas fa-indent"></i><span>Category</span></i
+          ></a>
+        </div>
+        <div class="item">
+          <a class="sub-btn" href="#"
+            ><i class="fas fa-swatchbook"></i></i><span>Product</span>
+            <i class="fas fa-angle-right dropdown"> </i
+          ></a>
+          <div class="sub-menu">
+            <a href="adminListProduct.html" class="sub-item"
+              ><i class="fas fa-clipboard-list"></i><span>List product</span></a
+            >
+            <a href="adminProduct.html" class="sub-item"
+              ><i class="fas fa-plus-square"></i></i><span>Add product</span></a
+            >
+            <a href="" class="sub-item"
+              ><i class="fas fa-star-half-alt"></i></i><span>Rate Product</span></a
+            >
+          </div>
+        </div>
+        <div class="item">
+          <a class="" href="#"
+            ><i class="fas fa-user-cog"></i></i><span>Customer</span
+            ></a>
+        </div>
+        <div class="item">
+          <a class="sub-btn" href="#"
+            ><i class="fa fa-info-circle"></i><span>Order</span
+            ><i class="fas fa-angle-right dropdown"></i
+          ></a>
+          <div class="sub-menu">
+            <a href="" class="sub-item"
+              ><i class="fas fa-list"></i><span>List order</span></a
+            >
+            <a href="" class="sub-item"
+              ><i class="fas fa-info"></i></i><span>Details order</span></a
+            >
+          </div>
+        </div>
+        <div class="item">
+          <a href="#"><i class="fa fa-sliders-h"></i><span>Settings</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="title">
+        <h2>List category</h2>
+      </div>
+      <div class="table-product">
+        <div class="list-product-all">
+          <table class="tblone">
+            <tr>
+              <th >Num</th>
+              <th >Name</th>
+              <th >Action</th>
+            </tr>
+          
+            <tr>
+              <td>01</td>
+              <td>Scale figure</td>
+              <td><div class='btn-action' ><div class="delete"><a href="#">Delete</a></div><div class="edit edit-cate"><a href="#">Edit</a></div></div></td>
+            </tr>
+
+            <tr>
+                <td>02</td>
+                <td>Action figure</td>
+                <td><div class='btn-action' ><div class="delete"><a href="#">Delete</a></div><div class="edit edit-cate"><a href="#">Edit</a></div></div></td>
+              </tr>
+
+              <tr>
+                <td>03</td>
+                <td>Chibi figure</td>
+                <td><div class='btn-action' ><div class="delete"><a href="#">Delete</a></div><div class="edit edit-cate"><a href="#">Edit</a></div></div></td>
+              </tr>
+            </table>
+        </div>
+
+        <div class="page-divide">
+          <div class="pagination">
+          <a href="#">«</a>
+          <a href="#">1</a>
+          <a class="active" href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">5</a>
+          <a href="#">6</a>
+          <a href="#">»</a>
+        </div>
+        </div>
+      </div>
+
+      <div class="title">
+        <h2>Add category</h2>
+      </div>
+
+      <div class="box-add-category">
+        <div class="form-category">
+          <form action="">
+            <div class="input-block name">
+              <label for="NameCate">Name Category</label>
+              <input type="text" name="namecate" id="NameCate">
+            </div>
+            <div class="button-cate">
+              <button>Add category</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div id="model-cate">
+        <div class="title">
+          <h2>Edit category</h2>
+        </div>
+  
+        <div class="box-add-category">
+          <div class="form-category">
+            <form action="">
+              <div class="input-block name">
+                <label for="NameCateEdit">Name Category</label>
+                <input type="text" name="namecateedit" id="NameCateEdit">
+              </div>
+              <div class="button-cate">
+                <button>Add category</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="../Js/admin.js"></script>
+  </body>
+</html>
