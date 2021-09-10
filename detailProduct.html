@@ -43,10 +43,10 @@
                     <a href="product.html">Sản Phẩm</a>
                   </li>
                   <li>
-                    <a href="#">Liên Hệ</a>
+                    <a href="contact.html">Liên Hệ</a>
                   </li>
                   <li>
-                    <a href="#">Blog</a>
+                    <a href="blog.html">Blog</a>
                   </li>
                 </ul>
               </nav>
@@ -353,9 +353,26 @@
              
           </section>
         </div>
+      <div class="comment">
+        <div class="title-comment">
+          <h3>Bình luận</h3>
+        </div>
+        <div class="cdk-comment">
+          <div class="input-comment">
+            <form action="" method="POST">
+              <textarea name="content" id="editor">
+              </textarea>
+                <button>Bình luận</button>
+            </form>
+           
+          </div>
+          <div class="show-comment"></div>
+        </div>
+      </div>
+    
       </main>
     
-      <footer>
+      <footer class="clear">
         <div class="footer-container">
           <div class="row">
             <div class="about-us">
@@ -405,8 +422,15 @@
         </div>
       </footer>
     </div>
+    <script src="//cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="Js/detailProduct.js"></script>
     <script src="Js/code.js"></script>
+    <script>
+    CKEDITOR.replace( 'editor',{
+      filebrowserUploadUrl: 'ckeditor/ck_upload.php',
+      filebrowserUploadMethod: 'form'
+    });
+    </script>
   </body>
 </html>

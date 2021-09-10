@@ -123,7 +123,7 @@ table tr td img{
     padding: 20px;
     border-radius: 20px;
 }
-  #model , #model-cate{
+  #model , #model-cate,#model-customer{
     position: fixed;
     top: 50%;
     left: 50%;

@@ -45,7 +45,7 @@ table.tblone tr:nth-child(2n) {
   background: #fdf0f1;
   height: 30px;
 }
-table.tblone input[type="number"] {
+table.tblone input[type="text"] {
   border: 1px solid #ddd;
   padding: 2px;
   width: 60px;
@@ -72,6 +72,13 @@ table.tblone img {
     width: 100px;
     object-fit: cover;
 }
+table.tblone button{
+  font-size: 20px;
+  outline: none;
+  border: none;
+  padding: 5px;
+  border-radius: 10px;
+}
 .shopping {
     margin-top: 30px;
     display: flex;
@@ -93,10 +100,95 @@ table.tblone img {
   width: 270px;
   outline: none;
 }
-button {
+.shopping button {
     outline: none;
     border: none;
     padding: 20px;
     border-radius: 10px;
     cursor: pointer;
+}
+.totalMoney button , .confim button{
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.show{
+  transform: scale(1) !important;
+  visibility: visible !important;
+}
+#model{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: #0202022b;
+  transition: 1s;
+  transform: scale(0);
+  visibility: hidden;
+}
+
+.info-cus{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 650px;
+  width: 100%;
+  transform: translate(-50%,-50%) ;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+.input-info input {
+  padding: 10px;
+  margin: 10px;
+  width: calc(100% - 45px);
+}
+.confim{
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px;
+}
+.row-form{
+ display: flex;
+ justify-content: center;
+}
+.pay-cart-money{
+  margin:20px;
+  max-width: 250px;
+  width: 100%;
+}
+.pay-cart-money table.tablepay tr{
+  margin: 10px;
+}
+.pay-cart-money table.tablepay tr td input{
+  border: none;
+  outline: none;
+}
+.thanhtoan{
+  margin: 10px;
+}
+.thanhtoanpay{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px;
+}
+.thanhtoanpay input{
+  width: unset;
+}
+.pay-img img{
+  width: 70px;
+
+}
+.confim button{
+  padding: 20px 30px;
+  margin: 10px 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 20px;
 }

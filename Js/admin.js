@@ -40,7 +40,7 @@ for (let i = 0; i < dropdown.length; i++) {
 var btnEdit = document.querySelectorAll(".btn-edit");
 var modelProduct = document.getElementById("model");
 
-modelClick(btnEdit, modelProduct, "showModel");
+modelClick(btnEdit, modelProduct,"showModel");
 
 function modelClick(btnClick, model, ClassAdd) {
   for (let i = 0; i < btnClick.length; i++) {
@@ -50,17 +50,29 @@ function modelClick(btnClick, model, ClassAdd) {
       model.classList.add(ClassAdd);
     });
   }
-  window.onclick = function (e) {
-    if (e.target === model) {
-      model.classList.remove(ClassAdd);
-    }
-  };
 }
 
 var btnEditCate = document.querySelectorAll(".edit-cate");
 var modelCate = document.getElementById("model-cate");
 
 modelClick(btnEditCate, modelCate, "showModel");
+
+var btnInfo = document.querySelectorAll(".btn-info");
+var modelInfo = document.getElementById("model-customer");
+
+modelClick(btnInfo, modelInfo, "showModel");
+
+window.onclick = function (e) {
+  if (e.target === modelProduct) {
+    modelProduct.classList.remove("showModel");
+  }
+  if (e.target === modelCate) {
+    modelCate.classList.remove("showModel");
+  }
+  if (e.target === modelInfo) {
+    modelInfo.classList.remove("showModel");
+  }
+};
 // for(let i = 0; i< btnEdit.length ; i++){
 //   btnEdit[i].addEventListener('click',function(e){
 //     var EditForm = document.forms['Edit-form'];

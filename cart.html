@@ -1,246 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
-    <link
-    rel="stylesheet"
-    href="https://unpkg.com/swiper/swiper-bundle.min.css"
-  />
-    <link rel="stylesheet" href="Css/Css.css" />
-    <link rel="stylesheet" href="Css/product/product.css" />
-    <link rel="stylesheet" href="Css/Cart/cart.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="Css/Css.css" />
+  <link rel="stylesheet" href="Css/product/product.css" />
+  <link rel="stylesheet" href="Css/Cart/cart.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
+
 <body>
-    <div class="main">
-        <header>
-            <div class="header">
-              <div class="header-left">
-                <div class="logo">
-                  <img src="Img/logo.jpg" alt="logo" />
-                </div>
-                <div class="menu-bar">
-                  <i class="fas fa-bars"></i>
-                </div>
-                <div class="navbar">
-                  <nav>
-                    <ul>
-                      <li>
-                        <a href="index.html">Trang Chủ</a>
-                      </li>
-                      <li>
-                        <a href="product.html">Sản Phẩm</a>
-                      </li>
-                      <li>
-                        <a href="#">Liên Hệ</a>
-                      </li>
-                      <li>
-                        <a href="#">Blog</a>
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-                <div class="search">
-                  <div class="iconSearch">
-                    <i class="fas fa-search"></i>
-                  </div>
-    
-                  <div class="boxSearch">
-                    <input type="search" />
-                  </div>
-                </div>
-              </div>
-              <div class="header-right">
-                <div class="adverbial">
-                  <div class="login">
-                    <a href="login.html">
-                      <i class="fas fa-user-circle f20px"></i
-                    ></a>
-                  </div>
-                  <div class="cart">
-                    <a href="cart.html">
-                      <i class="fas fa-shopping-cart"></i>
-                      <span class="countCart">0</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </header>
-        <div class="content">
-            <div class="cartoption">		
-                <div class="cartpage">
-                        <h2>Your Cart</h2>
-                            <table class="tblone">
-                                <tr>
-                                    <th width="20%">Product Name</th>
-                                    <th width="10%">Image</th>
-                                    <th width="15%">Price</th>
-                                    <th width="25%">Quantity</th>
-                                    <th width="20%">Total Price</th>
-                                    <th width="10%">Action</th>
-                                </tr>
-                                <tr>
-                                    <td>Product Title</td>
-                                    <td><img src="Img/gaixinh 600x600.png" alt=""/></td>
-                                    <td>Tk. 20000</td>
-                                    <td>
-                                        <form action="" method="post">
-                                            <input type="number" name="" value="1"/>
-                                            <input type="submit" name="submit" value="Update"/>
-                                        </form>
-                                    </td>
-                                    <td>Tk. 40000</td>
-                                    <td><a href="">X</a></td>
-                                </tr>
-                                
-                                <tr>
-                                    <td>Product Title</td>
-                                    <td><img src="Img/horimiya.jpg" alt=""/></td>
-                                    <td>Tk. 20000</td>
-                                    <td>
-                                        <form action="" method="post">
-                                            <input type="number" name="" value="1"/>
-                                            <input type="submit" name="submit" value="Update"/>
-                                        </form>
-                                    </td>
-                                    <td>Tk. 40000</td>
-                                    <td><a href="">X</a></td>
-                                </tr>
-                                
-                                <tr>
-                                    <td>Product Title</td>
-                                    <td><img src="Img/introduct-figure-3.jpg" alt=""/></td>
-                                    <td>Tk. 20000</td>
-                                    <td>
-                                        <form action="" method="post">
-                                            <input type="number" name="" value="1"/>
-                                            <input type="submit" name="submit" value="Update"/>
-                                        </form>
-                                    </td>
-                                    <td>Tk. 40000</td>
-                                    <td><a href="">X</a></td>
-                                </tr>
-                                <tr>
-                                    <td>Product Title</td>
-                                    <td><img src="Img/Khiên.jpg" alt=""/></td>
-                                    <td>Tk. 20000</td>
-                                    <td>
-                                        <form action="" method="post">
-                                            <input type="number" name="" value="1"/>
-                                            <input type="submit" name="submit" value="Update"/>
-                                        </form>
-                                    </td>
-                                    <td>Tk. 40000</td>
-                                    <td><a href="">X</a></td>
-                                </tr>
-                                
-                                <tr>
-                                    <td>Product Title</td>
-                                    <td><img src="Img/Kimetsu.no.Yaiba.full.png" alt=""/></td>
-                                    <td>Tk. 20000</td>
-                                    <td>
-                                        <form action="" method="post">
-                                            <input type="number" name="" value="1"/>
-                                            <input type="submit" name="submit" value="Update"/>
-                                        </form>
-                                    </td>
-                                    <td>Tk. 40000</td>
-                                    <td><a href="">X</a></td>
-                                </tr>
-                                
-                            </table>
-                            <table style="float:right;text-align:left;" width="40%">
-                                <tr>
-                                    <th>Sub Total : </th>
-                                    <td>TK. 210000</td>
-                                </tr>
-                                <tr>
-                                    <th>VAT : </th>
-                                    <td>TK. 31500</td>
-                                </tr>
-                                <tr>
-                                    <th>Grand Total :</th>
-                                    <td>TK. 241500 </td>
-                                </tr>
-                           </table>
-                        </div>
-                        <div class="shopping">
-                            <div class="shopleft">
-                                <a href="index.html"> 
-                                    <button>Quay lại trang chủ</button>
-                                    </a>
-                            </div>
-                            <div class="shopright">
-                                <a href="login.html"> <button>Đăng nhập để tiếp tục</button></a>
-                            </div>
-                        </div>
-            </div>  	
-           <div class="clear"></div>
-        </div>
-     </div>
-     <footer>
-        <div class="footer-container">
-          <div class="row">
-            <div class="about-us">
-              <h3>Figure Shop</h3>
+  <div class="main">
+    <header>
+      <div class="header">
+        <div class="header-left">
+          <div class="logo">
+            <img src="Img/logo.jpg" alt="logo" />
+          </div>
+          <div class="menu-bar">
+            <i class="fas fa-bars"></i>
+          </div>
+          <div class="navbar">
+            <nav>
               <ul>
                 <li>
-                  <a href="#">Trang Chủ</a>
+                  <a href="index.html">Trang Chủ</a>
                 </li>
                 <li>
-                  <a href="#">Sản Phẩm</a>
+                  <a href="product.html">Sản Phẩm</a>
                 </li>
                 <li>
-                  <a href="#">Liên Hệ</a>
+                  <a href="contact.html">Liên Hệ</a>
                 </li>
                 <li>
-                  <a href="#">Blog</a>
+                  <a href="blog.html">Blog</a>
                 </li>
               </ul>
+            </nav>
+          </div>
+          <div class="search">
+            <div class="iconSearch">
+              <i class="fas fa-search"></i>
             </div>
-            <div class="contact">
-              <h3>Liên hệ</h3>
-              <ul>
-                <li>
-                  Địa chỉ: 189 Nguyên Duy Trinh, Quận Ngũ Hành Sơn,Tp.Đà Nẵng
-                </li>
-                <li>Điện thoại: 0393256471</li>
-                <li>Fax: 0868866471</li>
-                <li>Mail: bthanh2001@gmail.com</li>
-              </ul>
-            </div>
-            <div class="Fanpage">
-              <div class="fanpage">
-                <h3>Fanpage</h3>
-              </div>
-              <iframe
-                src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fbuithanhtekk%2Fposts%2F571764940647109&show_text=true&width=500"
-                width="250"
-                height="248"
-                style="border: none; overflow: hidden"
-                scrolling="no"
-                frameborder="0"
-                allowfullscreen="true"
-                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-              ></iframe>
+
+            <div class="boxSearch">
+              <input type="search" />
             </div>
           </div>
         </div>
-      </footer>
-    </div> 
-    <script src="Js/code.js"></script>
+        <div class="header-right">
+          <div class="adverbial">
+            <div class="login">
+              <a href="login.html">
+                <i class="fas fa-user-circle f20px"></i></a>
+            </div>
+            <div class="cart">
+              <a href="cart.html">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="countCart">0</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="content">
+      <div class="cartoption">
+        <div class="cartpage">
+          <h2>Your Cart</h2>
+          <table class="tblone">
+            <tr>
+              <th width="20%">Product Name</th>
+              <th width="10%">Image</th>
+              <th width="15%">Price</th>
+              <th width="25%">Quantity</th>
+              <th width="20%">Total Price</th>
+              <th width="10%">Action</th>
+            </tr>
+            <tr>
+              <td>Product Title</td>
+              <td><img src="Img/gaixinh 600x600.png" alt="" /></td>
+              <td>20000 VND</td>
+              <td>
+                <form action="" method="post">
+                  <button><a href="">-</a></button>
+                  <input type="text" name="" value="1" disabled />
+                  <button><a href="">+</a></button>
+                </form>
+              </td>
+              <td>20000 VND</td>
+              <td><a href="">X</a></td>
+            </tr>
+
+            <tr>
+              <td>Product Title</td>
+              <td><img src="Img/horimiya.jpg" alt="" /></td>
+              <td>20000 VND</td>
+              <td>
+                <form action="" method="post">
+                  <button><a href="">-</a></button>
+                  <input type="text" name="" value="1" disabled />
+                  <button><a href="">+</a></button>
+                </form>
+              </td>
+              <td>20000 VND</td>
+              <td><a href="">X</a></td>
+            </tr>
+
+            <tr>
+              <td>Product Title</td>
+              <td><img src="Img/introduct-figure-3.jpg" alt="" /></td>
+              <td>20000 VND</td>
+              <td>
+                <form action="" method="post">
+                  <button><a href="">-</a></button>
+                  <input type="text" name="" value="1" disabled />
+                  <button><a href="">+</a></button>
+                </form>
+              </td>
+              <td>20000 VND</td>
+              <td><a href="">X</a></td>
+            </tr>
+            <tr>
+              <td>Product Title</td>
+              <td><img src="Img/Khiên.jpg" alt="" /></td>
+              <td>20000 VND</td>
+              <td>
+                <form action="" method="post">
+                  <button><a href="">-</a></button>
+                  <input type="text" name="" value="1" disabled />
+                  <button><a href="">+</a></button>
+                </form>
+              </td>
+              <td>20000 VND</td>
+              <td><a href="">X</a></td>
+            </tr>
+
+            <tr>
+              <td>Product Title</td>
+              <td><img src="Img/Kimetsu.no.Yaiba.full.png" alt="" /></td>
+              <td>20000 VND</td>
+              <td>
+                <form action="" method="post">
+                  <button><a href="">-</a></button>
+                  <input type="text" name="" value="1" disabled />
+                  <button><a href="">+</a></button>
+                </form>
+              </td>
+              <td>20000 VND</td>
+              <td><a href="">X</a></td>
+            </tr>
+
+          </table>
+          <table class="totalMoney" style="float:right;text-align:left;" width="40%">
+            <tr>
+              <th>Tổng phụ : </th>
+              <td> 210000 VND</td>
+            </tr>
+            <tr>
+              <th>VAT : </th>
+              <td>31500 VND</td>
+            </tr>
+            <tr>
+              <th>Tổng tiền:</th>
+              <td>241500 VND </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><button id="payModel" onclick="clickShowModel()">Thanh toán</button></td>
+
+            </tr>
+          </table>
+        </div>
+        <div class="shopping">
+          <div class="shopleft">
+            <a href="index.html">
+              <button>Quay lại trang chủ</button>
+            </a>
+          </div>
+          <div class="shopright">
+            <a href="login.html"> <button>Đăng nhập để tiếp tục</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+
+    <div id="model">
+      <div class="info-cus">
+        <div class="title">
+          <h4>Xác nhận thông tin</h4>
+        </div>
+        <form action="">
+        <div class="row-form">
+          <div class="pay-cart-info">
+              <div class="input-info">
+                <label for="Name">Tên người nhân :</label>
+                <input type="text" id="Name" name="name" value="Bùi Ngọc Thành">
+              </div>
+              <div class="input-info">
+                <label for="sdt">SDT người nhân :</label>
+                <input type="text" id="sdt" name="sdt" value="0393256471">
+              </div>
+              <div class="input-info">
+                <label for="email">Email người nhân :</label>
+                <input type="email" id="email" name="email" value="bthanh2001@gmail.com">
+              </div>
+              <div class="input-info">
+                <label for="cmnd">CMND người nhân :</label>
+                <input type="text" id="cmnd" name="cmnd" value="12345678910">
+              </div>
+              <div class="input-info">
+                <label for="adress">Địa chỉ người nhân :</label>
+                <input type="text" id="adress" name="adress" value="Hoa thủy lệ thủy quảng bình">
+              </div>
+            
+          </div>
+          <div class="pay-cart-money">
+           <div class="totle-pay">
+             <div class="thanhtoan">
+               <strong>Tổng phụ : </strong> <span>210000 VND</span>
+             </div>
+             <div class="thanhtoan">
+              <strong>VAT : </strong> <span>31000 VND</span>
+            </div>
+            <div class="thanhtoan">
+              <strong>Tổng tiền : </strong> <span>232000 VND</span>
+            </div>
+           </div>
+           <div class="thanhtoanpay">
+            <input type="radio" id="giaohang" name="paypay" value="giaohang" required>
+            <label for="giaohang">Thanh toán khi nhận hàng</label>
+          </div>
+           <div class="thanhtoanpay">
+             <input type="radio" name="paypay" value="vnpay" required>
+             <div class="pay-img">
+               <img src="Img/walletVNPayVidientu.png" alt="">
+             </div>
+           </div>
+           <div class="thanhtoanpay">
+            <input type="radio" name="paypay" value="momo" required>
+            <div class="pay-img">
+              <img src="Img/momo.jfif" alt="">
+            </div>
+          </div>
+          <div class="confim">
+            <button>Xác nhận</button>
+          </div>
+          </div>
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-container">
+      <div class="row">
+        <div class="about-us">
+          <h3>Figure Shop</h3>
+          <ul>
+            <li>
+              <a href="#">Trang Chủ</a>
+            </li>
+            <li>
+              <a href="#">Sản Phẩm</a>
+            </li>
+            <li>
+              <a href="#">Liên Hệ</a>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+          </ul>
+        </div>
+        <div class="contact">
+          <h3>Liên hệ</h3>
+          <ul>
+            <li>
+              Địa chỉ: 189 Nguyên Duy Trinh, Quận Ngũ Hành Sơn,Tp.Đà Nẵng
+            </li>
+            <li>Điện thoại: 0393256471</li>
+            <li>Fax: 0868866471</li>
+            <li>Mail: bthanh2001@gmail.com</li>
+          </ul>
+        </div>
+        <div class="Fanpage">
+          <div class="fanpage">
+            <h3>Fanpage</h3>
+          </div>
+          <iframe
+            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fbuithanhtekk%2Fposts%2F571764940647109&show_text=true&width=500"
+            width="250" height="248" style="border: none; overflow: hidden" scrolling="no" frameborder="0"
+            allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </div>
+  <script src="Js/code.js"></script>
+  <script>
+    function clickShowModel() {
+      document.getElementById("model").classList.toggle('show');
+    }
+
+    window.onclick = function (e) {
+      if (e.target === document.getElementById("model")) {
+        document.getElementById("model").classList.remove('show');
+      }
+    }
+  </script>
 </body>
+
 </html>

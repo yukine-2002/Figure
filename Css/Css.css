@@ -1,7 +1,6 @@
 *{
     padding: 0;
     margin: 0;
-   
 }
 
 .about-button {
@@ -70,6 +69,10 @@ nav ul li a{
     padding: 10px 10px;
     font-size: 25px;
     display: none;
+    cursor: pointer;
+}
+.menu-bar i:hover{
+  color: turquoise;
 }
 .header-left , .header-right{
     align-items:center;
@@ -83,6 +86,38 @@ nav ul li a{
     align-items: center;
     display: flex;
     line-height: 18.4px;
+    position: relative;
+}
+.advCustomer{
+    position: absolute;
+    background: #fff;
+    min-width: 100px;
+    height: 0;
+    overflow: hidden;
+    top: 32px;
+    border-radius: 10px;
+    left: -70px;
+    width: 160px;
+    padding: 10px;
+    transition:0.5s ;
+}
+.login:hover .advCustomer{
+    height: 115px;
+}
+.advCustomer ul li{
+    list-style: none;
+    text-align: center;
+}
+.advCustomer ul li a{
+    display: block;
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+    transition:1s ;
+    transform-origin: background;
+}
+.advCustomer ul li a:hover{
+    background: darkgray;
 }
 .f20px{
   font-size: 25px !important; 

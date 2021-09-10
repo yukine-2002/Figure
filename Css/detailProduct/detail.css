@@ -244,6 +244,29 @@ img{
 .slide-show:hover .slide-show-container{
     transform: translateY(0);
 }
+.comment{
+    padding: 20px  0;
+    margin-top: 20px;
+    border-top: 1px solid #12263a;
+}
+.title-comment h3 {
+    margin: 10px 0;
+}
+
+.input-comment button {
+    padding: 10px;
+    margin: 10px;
+    outline: none;
+    background: #12263a;
+    color: #fff;
+    font-weight: 900;
+    float: right;
+    cursor: pointer;
+}
+.clear{
+    clear: both;
+
+}
 @media screen and (min-width:992px) {
     .card{
         display: grid;
